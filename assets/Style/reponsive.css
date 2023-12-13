@@ -1,0 +1,89 @@
+@media (max-width: 577px) {
+  main {
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 20%;
+  }
+  .search {
+    position: relative;
+  }
+  .search > div:first-child {
+    position: absolute;
+    top: -50%;
+  }
+
+  .humorous-text > p {
+    font-family: Vazirmatn, sans-serif;
+    font-size: 0.8rem;
+  }
+  .weather-calender {
+    height: 100%;
+  }
+  #weather-data,
+  #event-calendar {
+    height: 93%;
+  }
+  #weather-data {
+    gap: 0px;
+  }
+  #event-calendar {
+    gap: 4px;
+  }
+  .add-shortcut {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #i1,
+  #i2,
+  #i3 {
+    font-size: 30px;
+  }
+  .tasks > nav > p {
+    font-size: 0.9rem;
+  }
+  .task-list > li {
+    font-size: 0.8rem;
+  }
+  #to-do > input::placeholder {
+    font-size: 0.7rem;
+  }
+  #creat-task > i {
+    font-size: 1rem;
+  }
+  .current-weather {
+    font-size: 30px;
+  }
+  .min-tem,
+  .max-tem {
+    font-size: 0.8rem;
+  }
+  #forecast,
+  #oqat-sharee {
+    font-size: 0.6rem;
+    width: 80%;
+  }
+  .tiiimmme {
+    font-size: 1.6rem;
+    margin-left: 20px;
+  }
+  .current-day {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1173px) {
+  body {
+    position: relative;
+  }
+  main {
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 40%;
+  }
+  .tasks {
+    height: 75%;
+  }
+  .search {
+    position: absolute;
+    top: -40%;
+  }
+}

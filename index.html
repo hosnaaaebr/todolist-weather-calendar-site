@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new project</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/Style/main.css" />
+    <link
+      rel="stylesheet"
+      href="../project1/assets/Style/weather-calender.css"
+    />
+    <link rel="stylesheet" href="assets/Style/search.css" />
+    <link rel="stylesheet" href="assets/Style/tasks.css" />
+    <link rel="stylesheet" href="assets/Style/reponsive.css" />
+  </head>
+  <body class="d-flex c-direction align-center">
+    <header>
+      <div class="d-flex align-start">
+        <i class="bx bx-cog"></i>
+        <i class="bx bxs-user"></i>
+      </div>
+    </header>
+    <main class="container g-grid">
+      <section class="weather-calender g-grid">
+        <section id="weather-data">
+          <div class="current-weather">
+            <div>
+              <div class="icon-box">
+                <img class="icon-weather" src="" alt="" />
+              </div>
+              <div
+                class="temperature-box d-flex align-center justify-center"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="humorous-text d-flex"></h2>
+          </div>
+          <div class="third-child d-flex align-center justify-center">
+            <h5 class="min-tem"></h5>
+            <br />
+            <h5 class="max-tem"></h5>
+          </div>
+          <select name="" id="forecast">
+            <option value="">
+              <i class="bx bxs-chevron-down"></i>
+              <span>پیش بینی</span>
+            </option>
+          </select>
+        </section>
+
+        <section id="event-calendar">
+          <div class="current-time"></div>
+          <div class="current-day"></div>
+          <div class="current-year d-flex">
+            <div class="Gregorian-calendar"></div>
+            <div class="Islamic-calendar"></div>
+          </div>
+          <div>
+            <select name="" id="oqat-sharee">
+              <option value="">
+                <i class="bx bxs-chevron-down"></i>
+                <span>اوقات شرعی</span>
+              </option>
+            </select>
+            <select name="" id="oqat-sharee">
+              <option value="">
+                <i class="bx bxs-chevron-down"></i>
+                <span>تایمر</span>
+              </option>
+            </select>
+          </div>
+        </section>
+      </section>
+      <section class="search">
+        <div class=".search-box">
+          <form action="">
+            <div>
+              <img src="assets/Images/google.png" alt="" />
+            </div>
+            <input type="text" placeholder="جستجو در گوگل" />
+            <button><i class="bx bx-search"></i></button>
+          </form>
+        </div>
+
+        <ul class="add-shortcut">
+          <li class="icon-0">
+            <i class="bx bx-dots-horizontal-rounded" id="i1"></i>
+            <i class="bx bx-dots-horizontal-rounded" id="i2"></i>
+            <i class="bx bx-dots-horizontal-rounded" id="i3"></i>
+            <br />
+            <br />
+            <p>دم دستی</p>
+          </li>
+        </ul>
+      </section>
+      <section class="tasks">
+        <nav>
+          <p>دست نویس</p>
+        </nav>
+        <div><ul class="task-list"></ul></div>
+        <div>
+          <form id="to-do">
+            <input
+              type="text"
+              placeholder="نوشتن تسک جدید"
+              class="todo-input"
+            />
+            <button id="creat-task">
+              <i class="bx bx-plus"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="assets/Scripts/weather-calender.js"></script>
+    <script src="assets/Scripts/tasks.js"></script>
+    <script src="assets/Scripts/middlecolumn.js"></script>
+  </body>
+</html>

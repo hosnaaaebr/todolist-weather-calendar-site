@@ -1,0 +1,122 @@
+*,
+*::before,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  --body-color: #c4def7;
+  --i-color: white;
+  --primary-color: rgb(235, 238, 244);
+  --border-color: rgb(223, 221, 221);
+  --degree-color: rgb(166, 166, 173);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Vazirmatn, sans-serif;
+  padding: 45px 100px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body-color);
+  gap: 20px;
+  overflow-y: auto;
+}
+.d-flex {
+  display: flex;
+}
+
+.g-grid {
+  display: grid;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.c-direction {
+  flex-direction: column;
+}
+
+.r-direction {
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+header {
+  max-width: 1124px;
+  height: 2rem;
+  align-self: flex-start;
+}
+header > div {
+  gap: 10px;
+  padding: 20px;
+  left: 30px;
+  top: 20%;
+}
+header > div > i {
+  font-size: 30px;
+  border-radius: 90%;
+  color: var(--i-color);
+}
+
+.temperature-box {
+  font-family: Vazirmatn, sans-serif;
+}
+
+main {
+  background-color: var(--body-color);
+  max-width: 1300px;
+  height: 100%;
+  gap: 16px;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* position: relative; */
+}
+main > div {
+  background-color: var(--body-color);
+}

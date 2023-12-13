@@ -1,0 +1,108 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+}
+.search > div:first-child {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 24px;
+}
+.search > div:first-child > form {
+  width: auto;
+  direction: rtl;
+  display: flex;
+  background-color: rgb(243, 239, 239);
+  border-radius: 35px;
+  padding: 6px;
+}
+
+.search > div:first-child > form > div:first-child {
+  flex-grow: 1;
+  width: 45px;
+  height: 30px;
+}
+
+.search > div:first-child > form > div:first-child > img {
+  height: 100%;
+}
+
+.search > div:first-child > form > input {
+  background-color: rgb(243, 239, 239);
+  font-family: Vazirmatn, sans-serif;
+  font-size: 15px;
+  flex-grow: 4;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+.search > div:first-child > form > button {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 17px;
+  border-radius: 15px;
+  background-color: rgb(43, 38, 141);
+  border: 0;
+  outline: 0;
+}
+.search > div:first-child > form > button > .bx-search {
+  color: white;
+  font-size: 15px;
+}
+.add-shortcut {
+  width: 100%;
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  direction: rtl;
+  gap: 10px;
+  position: relative;
+}
+.add-shortcut > li {
+  display: flex;
+  flex-direction: column;
+  width: 88px;
+  height: 87px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  font-family: Vazirmatn, sans-serif;
+}
+.box1 {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: Vazirmatn, sans-serif;
+  gap: 5px;
+  position: relative;
+}
+
+#i1 {
+  color: rgb(43, 38, 141);
+  font-size: 40px;
+  position: absolute;
+  top: 0%;
+}
+#i2 {
+  color: rgb(43, 38, 141);
+  font-size: 40px;
+  position: absolute;
+  top: 9%;
+}
+#i3 {
+  color: rgb(43, 38, 141);
+  font-size: 40px;
+  position: absolute;
+}
+.add-shortcut > li > i {
+  font-family: Vazirmatn, sans-serif;
+  font-size: 35px;
+  color: rgb(121, 115, 115);
+}

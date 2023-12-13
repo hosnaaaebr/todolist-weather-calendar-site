@@ -1,0 +1,120 @@
+.tasks {
+  height: 100%;
+  background-color: var(--i-color);
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  border-radius: 24px;
+  direction: rtl;
+}
+.tasks > nav > p {
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 0.1px solid var(--border-color);
+}
+.ul-task {
+  width: 100%;
+  height: 100%;
+}
+.task-list {
+  padding: 4px;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.task-list > li {
+  width: 100%;
+  border: 0.1px solid var(--border-color);
+  border-radius: 11px;
+  display: flex;
+  font-size: 1rem;
+  padding: 4px;
+  justify-content: space-between;
+  position: relative;
+}
+.task-list > li > p {
+  position: absolute;
+  right: 12%;
+  max-width: 50%;
+  /* first i write this code with css but in updated vergion */
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+#check-box {
+  display: none;
+}
+#check-box:checked {
+  background-attachment: white;
+}
+.togglebox {
+  margin-top: 2px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 0.1px solid rgb(99, 169, 99);
+  background-color: rgb(139, 198, 139);
+}
+li > div:last-child {
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  transition: 0.6s;
+  opacity: 0;
+}
+li > div:last-child img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+li:hover > div:last-child {
+  opacity: 1;
+}
+.tasks > div:last-child {
+  border-top: 1px solid var(--border-color);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#to-do {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+  font-family: Vazirmatn;
+  display: flex;
+  border-radius: 11px;
+  align-items: center;
+  justify-content: center;
+}
+
+#to-do > input {
+  flex-grow: 4;
+  height: 100%;
+  padding: 4px;
+  border: 0;
+  outline: 0;
+}
+#to-do > input::placeholder {
+  color: #a4a4a4;
+  font-size: 1rem;
+  font-family: Vazirmatn;
+}
+#creat-task {
+  flex-grow: 1;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  height: 100%;
+}
+#creat-task > i {
+  font-size: 1.5rem;
+  align-self: center;
+  color: #a4a4a4;
+}
