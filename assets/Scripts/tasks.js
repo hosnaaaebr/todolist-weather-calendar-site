@@ -2,7 +2,6 @@ const tasks = document.querySelector(".tasks");
 const ulTask = document.querySelector(".task-list");
 const formEl = document.querySelector("#to-do");
 const toDoInput = document.querySelector(".todo-input");
-const creatBtn = document.querySelector("#creat-task");
 const deleteTask = document.querySelector(".delete-task");
 const tasksToDo = JSON.parse(localStorage.getItem("todos")) || [];
 
