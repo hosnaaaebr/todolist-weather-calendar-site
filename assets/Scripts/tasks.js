@@ -19,7 +19,7 @@ formEl.addEventListener("submit", async function (e) {
     alert("please enter your task!");
   } else if (toDoInput.value.trim()) {
     tasksToDo.push(task);
-    localStorage.setItem("todos", JSON.stringify(tasksToDo));
+    saveToLocalStorage();
     creatTask();
     toDoInput.value = "";
     toDoInput.focus();
