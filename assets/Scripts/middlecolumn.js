@@ -21,8 +21,6 @@ const icons = [
 ];
 
 function createLi() {
-  let htmlContent = "";
-
   icons.forEach((icon) => {
     addShortcut.innerHTML += `<li class="icon-${icon.id}">
            <div>
